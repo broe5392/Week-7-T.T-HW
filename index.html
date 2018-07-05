@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Train Time</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        
+    </head>
+    <body>
+            
+        <div class = "container">
+            
+            <div class = "Jumbotron">
+                <h1 class = "text-center">Anytime is Train Time!!</h1>
+                <h4 class = "text-center">Chugga Chugga Choo Choo!!</h4>
+            </div>
+            
+            <div class = "col-lg-12">
+            <div class = "table">
+                <h5>Current Train Schedule!</h5>
+                <table id = "Schedule">
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (Min.)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </table>
+            </div>
+            </div>
+                
+        </br>
+            <div class = "col-lg-12">
+                <div class = "card card-default">
+                    <div class = "card-heading">
+                        <h5 class = "card title">Add Train</h5>
+                    </div>
+                <div class = "card-body">
+                    <form role = "form">
+                        <div class = "form-group row">
+                            <label for = "train name input">Train Name</label>
+                            <input class = "form-control" id = "train-input" type = "text">
+                        </div>
+                        <div class = "form-group row">
+                            <label for = "destination-input">Destination</label>
+                            <input class = "form-control" id = "destination-input" type = "text">
+                        </div>
+                        <div class = "form-group row">
+                            <label for = "train-time">First Train Time (HH:mm - military time)</label>
+                            <input class = "form-control" id = "train-time" type = "text">
+                        </div>
+                        <div class = "form-group row">
+                            <label for = "frequency-input">Frequency (Min.)</label>
+                            <input class = "form-control" id = "frequency-input" type = "text">
+                        </div>
+                        <button class = "btn btn-default" id = "submit" type = "submit">Submit</button>               
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script type = "text/javascript" language = "javascript" src = "assets/JS/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+       
+    </body>
+</html>
